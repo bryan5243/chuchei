@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+
+  <form action="procesar.php" method="POST">
+    Producto 1: <select name="producto1">
+     <option >Elija una opción</option>
+      <option value="opcion1">Cigarrillos</option>
+      <option value="opcion2">Alcohol</option>
+      <option value="3">Hortalizas</option>
+         <option value="4">Viveres</option>
+  
+    </select>
+    Precio: <input type="text" name="precio1">
+    <br>
+    Producto 2: <select name="producto2">
+    <option >Elija una opción</option>
+      <option value="opcion1" name="opcion1">Cigarrillos</option>
+      <option value="opcion2">Alcohol</option>
+      <option value="3">Hortalizas</option>
+         <option value="4">Viveres</option>
+    </select>
+    Precio: <input type="text" name="precio2">
+    <br><br>
+    <input type="text" name="total" value="" readonly>
+    <br><br>
+    <input type="submit" value="Enviar">
+  </form>
+  
+  <script>
+  function calcularTotal(){
+    var precio1 = document.querySelector('[name="precio1"]').value;
+    var precio2 = document.querySelector('[name="precio2"]').value;
+    if(precio1==""){
+      precio1=0;
+    }
+    if(precio2==""){
+      precio2=0;
+    }
+    document.querySelector('[name="total"]').value = parseFloat(precio1) + parseFloat(precio2);
+  }
+  
+  document.querySelector('[name="precio1"]').addEventListener('change', calcularTotal);
+  document.querySelector('[name="precio2"]').addEventListener('change', calcularTotal);
+  </script>
+</body>
+</html>
