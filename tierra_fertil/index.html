@@ -21,42 +21,72 @@
   </script>
 </head>
 
-<body>
-
-  <div class="container-fluid">
-
-    <form lass="container py-5 h-100">
-      <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col- col-md-8 col-lg-6 col-xl-5">
-          <div class="card shadow-2-strong" style="border-radius: 1rem;">
-            <div class="card-body p-3 text-center">
-              
-        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 0h24v24H0z" fill="none"></path>
-          <path
-            d="M4 15h2v5h12V4H6v5H4V3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6zm6-4V8l5 4-5 4v-3H2v-2h8z"
-            fill="currentColor"></path>
-        </svg>
-        <h1 class="form_heading">Sign in</h1>
+<body style="background-image:url(img/fondo.jpg) "class="  d-flex justify-content-center align-items-center vh-100">
+  <div
+    class=" p-5  text-secondary shadow"
+    style="border-radius: 20px; width: 25rem ; background: rgba(255, 255, 255, 0.20);"
+  >
+    <div class="d-flex justify-content-center">
+      <img
+        src="img/Logo4kfullHd.png"
+        alt="login-icon"
+        style="height: 9rem"
+      />
+    </div>
+    <div  style="text-shadow: white 0.1em 0.1em 0.2em; color: green;"class="text-center fs-4 fw-bold"> ASO.TIERRA FÉRTIL</div>
+    <div class="input-group mt-4">
+      <div class="input-group-text bg-light">
+        <img
+          src="img/usuario.png"
+          alt="username-icon"
+          style="height: 1rem"
+        />
       </div>
-      <div class="field">
-        <label for="username">Username</label>
-        <input id="username" placeholder="Username" type="text" name="username" class="input">
+      <input
+        class="form-control bg-light"
+        type="text"
+        placeholder="Usuario"
+      />
+    </div>
+    <div class="input-group mt-1">
+      <div class="input-group-text bg-light">
+        <img
+          src="img/contrasena.png"
+          alt="password-icon"
+          style="height: 1rem"
+        />
       </div>
-      <div class="field">
-        <label for="password">Password</label>
-        <input id="password" placeholder="Password" type="password" name="user_password" class="input">
+      <input
+        class="form-control bg-light"
+        type="password"
+        placeholder="Contraseña"
+      />
+    </div>
+    <div class="d-flex justify-content-around mt-1">
+      <div class="d-flex align-items-center gap-1">
+        <input class="form-check-input" type="checkbox" />
+        <div class="pt-1 " style="font-size: 0.9rem;color:grey">Recordar</div>
       </div>
-      <div class="field">
-        <button class="button">Login</button>
+      <div class="pt-1">
+        <a
+          href="#"
+          class="text-decoration-none text-info fw-semibold fst-italic"
+          style="font-size: 0.9rem"
+          >Recordar su contraseña?</a
+        >
       </div>
-    </form>
-
-
+    </div>
+    <div  style="border-radius: 10px" class="btn btn-success text-white w-100 mt-4 fw-semibold shadow-sm">
+      Ingresar
+    </div>
+    <div style="text-shadow:black  0.1em 0.1em 0.2em;color: grey;"class="d-flex gap-1 justify-content-center mt-1">
+      <div>No tengo una cuenta?</div>
+      <a href="#" class="text-decoration-none text-info fw-semibold"
+        >Registrarse</a
+      >
+    
+    </div>
   </div>
-  <form>
-   
 
 </body>
-
 </html>
